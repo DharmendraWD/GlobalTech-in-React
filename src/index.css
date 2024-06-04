@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navParentChildSec{
+        display: flex;
+    justify-content: space-between;
+    gap: 0 15px;
+}
+.navParentChild span, .navParentChild i{
+color: white;
+}
+.otherOptions{
+transition: .2s ease-in-out;
+backdrop-filter: blur(6px);
+}
+
