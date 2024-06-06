@@ -3,16 +3,152 @@
 @tailwind utilities;
 
 
+/* NAV AND BANNER CSS BEGINS HERE  */
 .navParentChildSec{
-        display: flex;
+    display: flex;
     justify-content: space-between;
     gap: 0 15px;
 }
 .navParentChild span, .navParentChild i{
-color: white;
+    color: white;
 }
 .otherOptions{
-transition: .2s ease-in-out;
-backdrop-filter: blur(6px);
+    transition: .2s ease-in-out;
+    backdrop-filter: blur(6px);
+}
+/* NAV AND BANNER CSS ENDS HERE  */
+
+/* SLIDER CSS BEGINS HERE  */
+#app {
+  height: 100%;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+      margin: 6px 0 12px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.swiper-slide img {
+  display: block;
+max-width: 35%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+.sliderImageParaText{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 57px;
+    gap: 30px 0;
+}
+.full-width-Sliderheading {
+  grid-column: span 2; /* Make the first box span both columns */
+}
+/* SLIDER CSS ENDS HERE  */
+
+/* OUR PRODUCT CSS  */
+
+/* OUR PRODUCT CSS ENDS HERE  */
+:root{
+    --salmon:salmon;
+    --black:#000;
+    --white:#fff;
+    --cyan:#80becc;
+    --dsalmon:#532521;
+    --dcyn:#1f2f32;
+  --font-size: 16px; /* Default font size */
+    --pc-fontHeading:20;
+}
+/* 
+*::selection{
+    background-color: var(--salmon);
+}
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+body[theme="cyan"]{
+    background-color:var(--cyan);
+}
+body[theme="cyan"] .section{
+    color:var(--dsalmon);
+}
+
+body[theme="salmon"]{
+    background-color:var(--salmon);
+}
+body[theme="cyan"] .section{
+    color:var(--black);
+}
+
+body[theme="white"]{
+color:(var(--black));
+}
+body[theme="cyan"] .section{
+    color:var(--dsalmon);
+} */
+
+
+
+/* MEDIA QUERIES  */
+@media(max-width:900px){
+  .ourPrdctBtnParent{
+justify-content: center;
+}
+}

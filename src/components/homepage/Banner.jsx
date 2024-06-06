@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../assets/img/globaltech_banner.png'
+import banner from '../../assets/img/globaltech_banner.png'
 
 function Banner() {
   return (

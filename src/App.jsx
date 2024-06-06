@@ -1,15 +1,23 @@
 import { useState } from "react"
-import NavBar from "./components/NavBar"
-import Banner from "./components/Banner"
-import Product from "./components/Product"
+import NavBar from "./components/utilities/NavBar"
+import Banner from "./components/homepage/Banner"
+import Slider from "./components/homepage/Slider"
+import OurProduct from './components/homepage/OurProduct'
+import LocomotiveScroll from 'locomotive-scroll';
 
+
+import { Router } from "react-router-dom"
 function App() {
-
+const scroll = new LocomotiveScroll();
 return(
   <>
-<NavBar></NavBar>
-<Banner></Banner>
-<Product></Product>
+  <div className="wrapper">
+ <NavBar></NavBar>
+<Banner></Banner> 
+<Slider></Slider>
+<OurProduct></OurProduct>
+  </div>
+
    </>
 )
 }
