@@ -4,6 +4,7 @@ import Banner from "./components/homepage/Banner"
 import Slider from "./components/homepage/Slider"
 import OurProduct from './components/homepage/OurProduct'
 import LocomotiveScroll from 'locomotive-scroll';
+import HomepageService from "./components/homepage/HomepageService"
 
 
 import { Router } from "react-router-dom"
@@ -16,6 +17,7 @@ return(
 <Banner></Banner> 
 <Slider></Slider>
 <OurProduct></OurProduct>
+<HomepageService></HomepageService>
   </div>
 
    </>
