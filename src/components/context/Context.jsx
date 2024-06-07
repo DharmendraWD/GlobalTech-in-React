@@ -19,7 +19,7 @@ import unfldCm from '../../assets/img/unifiled.png'
 // IMPORTING OUR PRODUCT IMAGE ENDS HERE
 
 // IMPORTING HOMEPAGE SERVICES IMAGE BEGINS HERE 
-import webdev from '../../assets/vdoGif/responsive.gif'
+import webdev from '../../assets/vdoGif/webdev.gif'
 import cldCom from '../../assets/vdoGif/cloudCom.gif'
 import respD from '../../assets/vdoGif/responsive.gif'
 import softD from '../../assets/vdoGif/softwareDev.gif'
@@ -147,8 +147,38 @@ const homePgServices =[
         para:"We prioritize your time, ensuring efficiency and convenience in every interaction. With streamlined processes and prompt responses, we're committed to respecting and valuing your time."
     },
 ]
+// WHY GLOBALTECH DATA BEGINS HERE
+const whyGlobalTech = [
+    {
+        ttl:"Cutting-Edge Web Development Solutions",
+        para:"GlobalTech stands out in the digital landscape by offering bespoke web development services tailored to meet the unique needs of every client. With a team of skilled developers proficient in the latest technologies, we deliver websites that are not only visually stunning but also highly functional and user-friendly."
+    },
+    {
+        ttl:"Leading Accounting Software Solutions",
+        para:"As pioneers in the field of accounting software, GlobalTech offers cutting-edge solutions designed to streamline financial processes and improve efficiency. Our proprietary accounting software provides businesses with the tools they need to manage their finances effectively, from invoicing and payroll to tax reporting and financial analysis."
+    },
+    {
+        ttl:"Innovative Software Development:",
+        para:"At GlobalTech, innovation is at the core of everything we do. Our software development services are driven by a commitment to delivering solutions that not only solve complex problems but also pave the way for future advancements. Whether it's developing custom applications or enhancing existing software, we strive for excellence in every project we undertake."
+    },
+    {
+        ttl:"Customer-Centric Approach",
+        para:"What sets GlobalTech apart is our unwavering dedication to customer satisfaction. We prioritize understanding our clients' needs and goals, allowing us to deliver solutions that not only meet but exceed their expectations. Our collaborative approach ensures that every project is a true reflection of our clients' vision and requirements."
+    },
+    {
+        ttl:"Commitment to Quality and Excellence",
+        para:" Quality is non-negotiable at GlobalTech. We adhere to rigorous quality standards throughout the development process, from initial concept to final delivery. Our meticulous attention to detail, combined with a passion for excellence, ensures that every project is executed to the highest standards of quality and craftsmanship."
+    },
+    {
+        ttl:"Continuous Innovation and Adaptability",
+        para:"In today's rapidly evolving digital landscape, staying ahead of the curve is essential. At GlobalTech, we embrace innovation and adaptability as core principles of our business. We continuously explore new technologies and methodologies to remain at the forefront of the industry, ensuring that our clients always receive the most innovative and cutting-edge solutions."
+    },
+]
+// WHY GLOBALTECH DATA ENDS HERE
+
 // HOMEPAGE SERVICES CONTENT ENDS HERE 
-    const objData = {sliderData, ourProductData, homePgServices}  // STORING ALL DATA IN AN OBJECT CALLED "objData"
+    const objData = {sliderData, ourProductData, homePgServices, whyGlobalTech}  // STORING ALL DATA IN AN OBJECT CALLED "objData"
+
 
    
    
