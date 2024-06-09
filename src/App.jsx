@@ -12,8 +12,11 @@ import About from './components/otherPages/About'
 import { Router } from "react-router-dom"
 import {Link, Routes, Route} from "react-router-dom";
 import Footer from "./components/homepage/Footer"
+import NavBar2 from "./components/utilities/NavBar2"
 
 function Index(){
+
+
   return(
     <div>
 <Banner></Banner> 
@@ -33,10 +36,7 @@ return(
 
  <NavBar></NavBar>
 
-
 <Routes>
-  {/* <Route path='/' element={<Home></Home>}></Route>
-  <Route path='/service' element={<Service></Service>}></Route> */}
   <Route path='/about' element={<About></About>}></Route>
   <Route path='/' element={<Index></Index>}></Route>
 </Routes>

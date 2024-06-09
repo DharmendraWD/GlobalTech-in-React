@@ -12,12 +12,11 @@ body {
     background-position: center;
     background-size: cover;
 }
-
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 110px;
+    width: auto;
     height: 100%;
     display: flex;
     align-items: center;
@@ -26,12 +25,14 @@ body {
     backdrop-filter: blur(17px);
     --webkit-backdrop-filter: blur(17px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
-    transition: width 0.3s ease;
+    transition: width 0.3s ease-in-out;
     z-index: 9999999;
 }
 
-.sidebar:hover {
-    width: 260px;
+.SideBarParent{
+  background-color: red;
+    overflow: hidden; /* Ensure the box doesn't overflow when parent width is 0 */
+  transition: width 0.3s ease; 
 }
 
 .sidebar .logo {
@@ -50,7 +51,6 @@ body {
     font-size: 1.15rem;
     font-weight: 600;
     margin-left: 15px;
-    display: none;
 }
 
 .sidebar:hover .logo h2 {
@@ -58,15 +58,16 @@ body {
 }
 
 .sidebar .links {
-    list-style: none;
-    margin-top: 20px;
-    overflow-y: auto;
-    scrollbar-width: none;
-    height: calc(100% - 140px);
+    padding: 10px 2px;
+    color: #0040ff;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: oblique;
 }
 
 .sidebar .links::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 .links li {
@@ -83,7 +84,7 @@ body {
 .links h4 {
     color: #222;
     font-weight: 500;
-    display: none;
+    /* display: none; */
     margin-bottom: 10px;
 }
 
@@ -107,7 +108,7 @@ body {
 .links li .lnk {
     padding: 10px;
     color: #000;
-    display: none;
+    /* display: none; */
     font-weight: 500;
     white-space: nowrap;
     text-decoration: none;

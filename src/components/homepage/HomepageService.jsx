@@ -62,7 +62,6 @@ gsap.to(".stickySlogan", {
         duration:4, 
     color:'#00524b', 
     delay:1, 
-    text:"haha", 
     repeat:true,
     yoyo:true,
     ease: "bounce.out",
@@ -82,7 +81,7 @@ gsap.to(".stickySlogan", {
             <div id="center">
                 <div className="content">
                 {/* sticky nav  */}
-            <p className='stickySlogan text-pink-600'> <span className='text-grey-400 font-extrabold'>GlobalTech</span> Provides Top-Notch Technical Services all Over Nepal</p>
+            <p className='stickySlogan text-pink-600' style={{position:'relative', top:"50px"}}> <span className='text-grey-400 font-extrabold'>GlobalTech</span> Provides Top-Notch Technical Services all Over Nepal</p>
                   {
                     objdata.homePgServices.map((elem, index)=>{
                       return(

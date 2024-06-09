@@ -29,6 +29,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
   return (
     <>
+    <div>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -49,11 +50,11 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
   objdata.sliderData.map((data, index)=>{
     return(
       <>
-      <SwiperSlide>
+      <SwiperSlide className='h-screen' style={{height:'100vh'}}>
   <div className="sliderImageParaText">
     {/* <h1 className='full-width-Sliderheading'>heading</h1> */}
     <Heading label={data.heading}></Heading>
-          <img src={data.img} alt="" />
+          <img src={data.img} alt=""  />
           <p>{data.para}</p>          
 <div className="hompgsliderBtn flex justify-center">
 <NavLink to="/some/path"><Button1 label="Learn More"></Button1></NavLink>
@@ -72,8 +73,9 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
           <span ref={progressContent}></span>
         </div>
       </Swiper>
-
+</div>
     </>
   );
+
 }
 export default Slider;
