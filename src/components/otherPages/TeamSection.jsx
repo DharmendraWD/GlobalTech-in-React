@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from 'react'
+import NavSocialLink from '../utilities/NavSocialLink'
 
-
-import more from '../../assets/img/more.png'
-import client from '../../assets/img/client.png'
-import cont from '../../assets/img/contact.png'
+import ranjit from '../../assets/img/ranjit.jpg'
+import sanjay from '../../assets/img/sanjay.jpg'
+import kiran from '../../assets/img/kiran.jpg'
+import Heading from '../utilities/Heading'
 
 const imgCollection = [
 {
-img:more,
-name:"Team 1",
+img:ranjit,
+name:"Mr Ranjit ",
+prof:"R&D Head",
 },
 {
-img:client,
-name:"Team 2",
+img:sanjay,
+name:"Mr Sanjay",
+prof:"Director",
+
 },
 {
-img:cont,
-name:"Team 3",
+img:kiran,
+name:"Mr Kiran",
+prof:"Full Stack",
+
 },
 ]
 
@@ -40,22 +46,30 @@ function TeamSection(){
     <style>
         {`
         img{
-                width:300px;
-                bottom:0px !important;
+             top: -70px !important;
+                    transition: .5s ease-in-out;
+                }
+                .team{
+                    transition: .5s ease-in-out;
+                    
         }
+.team:hover{
+    background-color: #dbd3d3;
+}
         `}
     </style>
   <div className="TeamParent relative">
+    <Heading label="Our Team"></Heading>
 {
     imgCollection.map((elem, index)=>{
         return(
             <>
             
                 <hr />
-    <div className="team z-0" >
-     <div className="para flex justify-around z-40 relative" id={index} onMouseOver={updateCursorPosition}>
-        <p>Name</p>
-        <h1>Profession</h1>       
+    <div className="team z-0 cursor-default" >
+     <div className="para flex justify-around z-40 relative pb-[17px] pt-[17px]" id={index} onMouseOver={updateCursorPosition}>
+        <p className='elemName'>{elem.name}</p>
+        <h1>{elem.prof}</h1> <span> <NavSocialLink></NavSocialLink> </span>       
      </div>
     </div>
     <hr />
@@ -63,8 +77,9 @@ function TeamSection(){
         )
     })
 }
-    <img src={images} alt="" className='absolute top-0'  style={{ left: cursorPosition.x,}}/>
-
+<div style={{borderRadius:"50%", objectFit:'cover', width:'20px'}}>
+    <img src={images} alt="" className='absolute z-[99999999999]'  style={{ left: cursorPosition.x, height:"148px", width:"148px", borderRadius:"100%"}}/>
+</div>
   </div>
   </>
   )
