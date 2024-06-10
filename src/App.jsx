@@ -8,7 +8,7 @@ import HomepageService from "./components/homepage/HomepageService"
 import WhyHomePage from './components/homepage/WhyHomepage'
 import ContactUs from './components/homepage/ContactUs'
 import About from './components/otherPages/About'
-
+import Services from './components/otherPages/Services'
 import { Router } from "react-router-dom"
 import {Link, Routes, Route} from "react-router-dom";
 import Footer from "./components/homepage/Footer"
@@ -19,12 +19,14 @@ function Index(){
 
   return(
     <div>
+<NavBar></NavBar>
 <Banner></Banner> 
 <Slider></Slider>
 <OurProduct></OurProduct>
 <HomepageService></HomepageService>
 <WhyHomePage></WhyHomePage>
 <ContactUs></ContactUs>
+<Footer></Footer>
     </div>
   )
 }
@@ -34,14 +36,12 @@ const scroll = new LocomotiveScroll();
 return(
   <>
 
- <NavBar></NavBar>
 
 <Routes>
   <Route path='/about' element={<About></About>}></Route>
+  <Route path='/Services' element={<Services></Services>}></Route>
   <Route path='/' element={<Index></Index>}></Route>
 </Routes>
-
-<Footer></Footer>
    </>
 )
 }

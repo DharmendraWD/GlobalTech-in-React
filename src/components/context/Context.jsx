@@ -25,6 +25,8 @@ import respD from '../../assets/vdoGif/responsive.gif'
 import softD from '../../assets/vdoGif/softwareDev.gif'
 import wbH from '../../assets/vdoGif/webHosting.gif'
 import tmgMgnt from '../../assets/vdoGif/timemanagement.gif'
+import garficAnim from '../../assets/img/corporate-design.png'
+import tracking from '../../assets/img/mobile-app-development-myths-1.png'
 // IMPORTING HOMEPAGE SERVICES IMAGE ENDS HERE 
 export const data = createContext("")
 
@@ -147,6 +149,31 @@ const homePgServices =[
         para:"We prioritize your time, ensuring efficiency and convenience in every interaction. With streamlined processes and prompt responses, we're committed to respecting and valuing your time."
     },
 ]
+// SERVICES DATA STARTS HERE 
+    const servicesData =[
+        {
+            ttl:"Software Development",
+            para:"Global-Tech strives to provide customized software solutions that will keep you a step ahead in competition by continuously improving your IT based business solutions.We take a flexible and long-term approach to technology and design decisions. We use our best expertise to help you decide the best platform for your software. Our proven experience and reputable expertise in providing customize software solutions enable us to meet our customers requirement and even surpassing their expectations.",
+            img:softD
+        },
+        {
+            ttl:"Cloud Computing",
+            para:"We deliver cloud computing based services and solutions to the business and/or Individual. Depending on the business model , we provide various solution including.",
+            img:softD
+        },
+        {
+            ttl:"ACCOUNT TRANING",
+            para:"A career in Accounts can be very rewarding, also a very secure choice, as every business needs to keep and maintain financial records. Whether you’re looking to become an Accounts Assistant, Payroll Clerk, or simply need to add financial record management knowledge to your skill set, we have training courses to suit you. We are here to guide you.",
+            img:softD
+        },
+        {
+            ttl:"ACCOUNT CONSULTANT",
+            para:"We as an Accounting consultants assist you in making different accounting reports , analyze financial information for business decision making. We help you with a number of tasks related to accounting services:",
+            img:cldCom
+        },
+    ]
+// SERVICES DATA ENDS HERE 
+
 // WHY GLOBALTECH DATA BEGINS HERE
 const whyGlobalTech = [
     {
@@ -176,8 +203,149 @@ const whyGlobalTech = [
 ]
 // WHY GLOBALTECH DATA ENDS HERE
 
+// TAB BOX DATA BEGINS HERE 
+    const tabOptions = [
+        {
+            ttl:'Web Solution',
+        },
+        {
+            ttl:'Co-Operative Desing',
+        },
+        {
+            ttl:'Graphic Design & Animation',
+        },
+        {
+            ttl:'Mobile Application Development',
+        },
+        {
+            ttl:'Web Hosting & Domain Registration',
+        },
+    ]
+
+    const tabDescription =[
+        {
+ttl:"Web Solution",
+img:webdev,
+btnLink:"",
+points:[
+    {
+        point:"Portal Development"
+    },
+    {
+        point:"Web Application Development"
+    },
+    {
+        point:"Content Management System"
+    },
+    {
+        point:"API Integration"
+    },
+    {
+        point:"E-Commerce"
+    },
+]
+        },
+        {
+ttl:"Co-operative Design",
+img:respD,
+btnLink:"",
+points:[
+    {
+        point:"Animated Company Profile"
+    },
+    {
+        point:"Corporate Infographics (Print and Animation)"
+    },
+    {
+        point:"Corporate Merchandise Designs"
+    },
+    {
+        point:"Brand Merchandise Designs"
+    },
+    {
+        point:"Commercial Photography (Product, Architecture,"
+    },
+    {
+        point:"Television Commercials (TVCs)"
+    },
+]
+        },
+        {
+ttl:"Graphic design and Animation",
+img:garficAnim,
+btnLink:"",
+points:[
+    {
+        point:"Motion Graphics"
+    },
+    {
+        point:"2D Animation"
+    },
+    {
+        point:"Content Management System"
+    },
+    {
+        point:"3D Animation"
+    },
+    {
+        point:"Visual Effects (VFX)"
+    },
+    {
+        point:"Poster and Print Designs"
+    },
+]
+        },
+        {
+ttl:"Mobile Application Development",
+img:tracking,
+btnLink:"",
+points:[
+    {
+        point:"GPS Tracking"
+    },
+    {
+        point:"Sales Ordering"
+    },
+    {
+        point:"Graphical Report"
+    },
+    {
+        point:"Smart Order"
+    },
+    {
+        point:"Order Management"
+    },
+]
+        },
+        {
+ttl:"Web hosting and domain registration",
+img:wbH,
+btnLink:"",
+points:[
+    {
+        point:"Domain Registration"
+    },
+    {
+        point:"Website Hosting"
+    },
+    {
+        point:"Email Hosting"
+    },
+    {
+        point:"SSL Certification"
+    },
+    {
+        point:"Linux VPS Hosting"
+    },
+    {
+        point:"Windows VPS Hosting"
+    },
+]
+        },
+    ]
+// TAB BOX DATA ENDS HERE 
 // HOMEPAGE SERVICES CONTENT ENDS HERE 
-    const objData = {sliderData, ourProductData, homePgServices, whyGlobalTech}  // STORING ALL DATA IN AN OBJECT CALLED "objData"
+    const objData = {sliderData, ourProductData, homePgServices, whyGlobalTech, servicesData, tabOptions, tabDescription}  // STORING ALL DATA IN AN OBJECT CALLED "objData"
 
 
    

@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import TextPlugin from 'gsap/TextPlugin'
-import more from '../../assets/img/more.png'
+import ContactUs from '../homepage/ContactUs'
 
 import Heading from '../utilities/Heading'
 import Button2 from '../utilities/Button2'
 import abtImg from '../../assets/img/aboutUs.jpg'
 import TeamSection from './TeamSection'
+import FlipCard2 from '../utilities/FlipCard2'
+import NavBar from '../utilities/NavBar'
+import Footer from '../homepage/Footer'
 
 export default function About() {
      gsap.registerPlugin(TextPlugin)
@@ -23,10 +26,15 @@ export default function About() {
     }, []); // Run only once on component mount
 
     // OUR TEAM 
+
+
+
+    
          return (
 <>
-   
+<NavBar></NavBar>
 <div className="largeHeadingParent w-screen h-screen flex justify-center items-center flex-column pr-[7px] pl-[7px]">
+       <div className="background absolute top-0 left-0 w-full h-full" style={{ backgroundImage: `url(${abtImg})`, opacity: 0.2 }}></div>
 <div className="heading w-full">
         <h1 className='text-[14vw] mt-[40px] ' style={{fontFamily:"Tilt Prism"}}>About <span className='abtHeading' style={{fontFamily:"Tilt Prism"}}></span> </h1>
 </div>
@@ -37,9 +45,13 @@ export default function About() {
 <Button2 label="More"></Button2>
 </div>
 {/* OUR TEAM  */}
-
 <TeamSection></TeamSection>
- 
+ {/* OUR STORY  */}
+ <FlipCard2></FlipCard2>
+ {/* CONTACT US  */}
+ <ContactUs></ContactUs>
+ {/* FOOTER  */}
+ <Footer></Footer>
    </>
   )
 }

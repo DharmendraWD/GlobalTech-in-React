@@ -55,6 +55,8 @@ body {
 
         `}
     </style>
+             <RunningHeading label="Why GlobalTech?"></RunningHeading>
+
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -71,7 +73,6 @@ body {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-             <RunningHeading label="Why GlobalTech?"></RunningHeading>
      {
         objdata.whyGlobalTech.map((elem, index)=>{
      return(

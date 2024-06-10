@@ -2,6 +2,11 @@ ul {
   list-style: none;
   flex-direction: row !important;
   display: flex;
+      opacity: 80%;
+      transition: ease-in-out .4s;
+}
+ul:hover{
+      opacity: 90%;
 }
 
 .example-2 {
@@ -39,8 +44,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 20%;
   color: #4d4d4d;
   background-color: #ffff;

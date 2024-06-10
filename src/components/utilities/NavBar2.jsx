@@ -50,7 +50,7 @@ gsap.registerPlugin(useGSAP);
                  <span className="material-symbols-outlined">
             <img src={services} alt="" />
           </span>
-          <NavLink to="/reports" className="lnk">Services</NavLink> {/* Update the NavLink and path */}
+          <NavLink to="/services" className="lnk">Services</NavLink> {/* Update the NavLink and path */}
         </li>
         <li>
                  <span className="material-symbols-outlined">

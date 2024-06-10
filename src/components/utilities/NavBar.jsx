@@ -14,7 +14,7 @@ const [wd, setWd] = useState("0")
 const [hamBurger, sethamBurger] = useState(true);
 const [op, setop] = useState(0);
 
-
+const hamIcons = document.getElementsByClassName("hamIcons")
 
 
 const [moreMenuValue, setmoreMenuValue] = useState(more);
@@ -63,12 +63,34 @@ if (hamBurger == true){
     setop(100)
          console.log("first")
     setWd("200px")
+    hamIcons[0].style.rotate="135deg"
+    hamIcons[0].style.position="absolute"
+    hamIcons[0].style.backgroundColor="red"
+    hamIcons[0].style.top="29%"
+
+    hamIcons[2].style.rotate="-135deg"
+    hamIcons[2].style.position="absolute"
+    hamIcons[2].style.backgroundColor="red"
+    hamIcons[2].style.top="29%"
+
+    hamIcons[1].style.opacity="0"
 }
 else{
     setmoreMenuValue(more)
     sethamBurger(true)
     setop(0)
      setWd("0")
+// hamburger icon 
+         hamIcons[0].style.rotate=""
+    hamIcons[0].style.position="relative"
+    hamIcons[0].style.backgroundColor="white"
+    hamIcons[0].style.top=""
+
+    hamIcons[2].style.rotate=""
+    hamIcons[2].style.position="relative"
+    hamIcons[2].style.backgroundColor="white"
+    hamIcons[2].style.top="0"
+         hamIcons[1].style.opacity="1"
 }
 // GSAP 
  gsap.registerPlugin(TextPlugin);
@@ -81,14 +103,21 @@ else{
     <> 
     <style>
         {`
-
+.hamIcons{
+    width: 28px;
+    height: 2px;
+    display: block;
+    background: white;
+    margin: 8px 0;
+transition: .1s ease-in-out;
+}
         `}
     </style>
-    <div className="navParent flex justify-around fixed w-full items-center" style={{zIndex:"99999999999999999",   background: "linear-gradient(rgb(155 155 155), rgb(102 126 143)"}}>
+    <div className="navParent flex justify-around fixed w-full items-center" style={{zIndex:"99999999999999999",   background: "linear-gradient(rgb(0 45 91), rgb(46 46 47))"}}>
         <div className="navParentChild">
-         <NavLink to="/">   <img src={logo} className='w-[9rem]' alt="" /></NavLink>
+         <NavLink to="/">   <img src={logo} className='w-[7rem]' alt="" /></NavLink>
         </div>
-        <div className="navParentChild navParentChildSec items-center text-[21px]">
+        <div className="navParentChild navParentChildSec items-center text-[18px]">
         <div className="whatsappParent">
               <NavLink> <i class="ri-whatsapp-line"></i></NavLink>
                 <span>01-5329949</span>
@@ -101,7 +130,11 @@ else{
 <NavSocialLink></NavSocialLink>
         </div>
         <div className="navParentChild text-[23px] cursor-pointer" onClick={sideMenuIconChange}>
-<img src={moreMenuValue} alt="" className='w-[37px]' />
+{/* <img src={moreMenuValue} alt="" className='w-[27px]' /> */}
+<span className='hamIcons hamIcon1'></span>
+<span className='hamIcons hamIcon2'></span>
+<span className='hamIcons hamIcon3'></span>
+
         </div>
 
         {/* other options  */}
